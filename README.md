@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Link](https://github.com/Othniel-Nduka/FM-Bento_Grid)
+- Live Site URL: [Live Vercel Site](https://fm-bento-grid-lyart.vercel.app/)
 
 ## My process
 
