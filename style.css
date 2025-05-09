@@ -1,0 +1,198 @@
+/* General Style */
+    *{
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        font-family:monospace;
+        text-decoration: none;
+    }
+
+    :root{
+        --Purple-100: hsl(254, 88%, 90%);
+        --Purple-500: hsl(256, 67%, 59%);
+        --Yellow-100: hsl(31, 66%, 93%);
+        --Yellow-500: hsl(39, 100%, 71%);
+        --White: hsl(0, 0%, 100%);
+        --Black: hsl(0, 0%, 7%);
+    }
+
+    body{
+        max-width: 100%;
+        min-height: 100vh;
+        background: var(--White);
+        overflow: hidden;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* End General Style */
+
+/* Container Styles */
+    .container{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(4, 180px);
+        grid-template-rows: repeat(4, 130px);
+        grid-template-areas: 
+        "   card-1   card-2   card-2   card-6"
+        "   card-1   card-2   card-2   card-6"
+        "   card-4   card-3   card-5   card-6"
+        "   card-4   card-3   card-7   card-7"
+        ;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .card{
+        padding: 10px;
+        border-radius: 10px;
+        justify-content: space-around;
+        font-weight: 500;
+    }
+
+    .card-1{
+        grid-area: card-1;
+        background: var(--Yellow-100);
+    }
+    .card-1 .card-txt{
+        font-size: 23px;
+    }
+    .card-1 .card-img{
+        width: 10rem;
+        height: 5rem;
+    }
+
+
+    .card-2{
+        grid-area: card-2;
+        background: var(--Purple-500);
+        text-align: center;
+    }
+    .card-2 .card-txt{
+        font-size: 29px;
+        color: var(--White);
+    }
+    .card-2 .card-small-txt{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--White);
+    }
+    .card-2 .card-img{
+        width: 18rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+
+    .card-3{
+        grid-area: card-3;
+        background: var(--White);
+    }
+    .card-3 .card-img{
+        width: 13rem;
+        height: 4rem;
+        object-fit: cover;
+        justify-content: center;
+    }
+    .card-3 .card-img2{
+        width: 10rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+    .card-3 .card-txt{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .card-4{
+        grid-area: card-4;
+        background: var(--Yellow-500);
+    }
+    .card-4 .card-img{
+        width: 10rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+    .card-4 .card-txt{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-5{
+        grid-area: card-5;
+        background: var(--Yellow-500);
+        overflow: hidden;
+    }
+    .card-5 .card-img{
+        width: 10rem;
+        height: 6rem;
+    }
+    .card-5 .card-txt{
+        font-size: 17px;
+        margin-bottom: 1.7rem;
+    }
+
+    .card-6{
+        grid-area: card-6;
+        background: var(--Purple-100);
+        overflow: hidden;
+    }
+    .card-6 .card-img{
+        width: 15rem;
+        height: 25rem;
+        object-fit: contain;
+        padding-left: 7rem;
+    }
+    .card-6 .card-txt{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .card-7{
+        flex-direction: row-reverse;
+        grid-area: card-7;
+        background: var(--Purple-500);
+    }
+    .card-7 .card-img{
+        width: 60%;
+        height: 9rem;
+    }
+    .card-7 .card-txt{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--White);
+    }
+
+/* End Container Styles */
+@media (max-width: 500px) {
+    body{
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5"
+        "card-6"
+        "card-7"
+        ;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+}
+
+/* 1400px Responsive Design */
