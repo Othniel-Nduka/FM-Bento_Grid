@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot/bento_screenshotDesktop.jpg)
-![](./Screenshot/bento_screenshotMobile.jpg)
+![Desktop View](./Screenshot/bento_screenshotDesktop.jpg)
+![Mobile View](./Screenshot/bento_screenshotMobile.jpg)
 
 
 ### Links
@@ -49,7 +49,7 @@ I would say that I would continue to use grids in the future alongside flexbox, 
 
 ### Useful resources
 
-- [Become A Master Grid CSS in 13 Minutes](https://www.example.com) - This really helped me in better understanding the concepts of grid-templates and how they work.
+- [Become A Master Grid CSS in 13 Minutes]([https://www.example.com](https://youtu.be/xI9G0Zh5DVA?si=h4WCced4R9OO0QSy)) - This really helped me in better understanding the concepts of grid-templates and how they work.
 ## Author
 
 - Frontend Mentor - [@Othniel-Nduka](https://www.frontendmentor.io/profile/Othniel-Nduka)
